@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title2"
+        android:textColor="#000000"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:text="The ImageSwitcher Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300dp"
+        android:layout_below="@id/title2"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="13dp">
+    </ImageSwitcher>
+
+    <TextSwitcher
+        android:layout_below="@id/imageSwitcher"
+        android:id="@+id/textSwitcher"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/imgswtcherBTN"
+        android:layout_below="@id/textSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onSwitch"
+        android:text="Next Image" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgswtcherBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"></ImageButton>
+
+</RelativeLayout>
